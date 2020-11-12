@@ -5,7 +5,7 @@
 {{$equipa->localidade}}
 <ul>
 @foreach($equipa->jogadores as $player)
-    <li>{{$jogador->nome}}</li>
+    <li>{{$player->nome}}</li>
 @endforeach
 </ul>
 @else
