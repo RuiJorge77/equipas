@@ -12,4 +12,11 @@ class equipas extends Model
     protected $primaryKey='id_equipas';
     
     protected $table='equipa';
+    
+    public function jogadores(){
+        return $this->hasMany(
+        'App\Models\jogadores',
+            'id_equipa'
+        );
+    }
 }
